@@ -16,11 +16,11 @@ impl Plugin for ArrayMaterialSystemPlugin {
         app.add_plugins(MaterialPlugin::<ArrayMaterial>::default());
         app.add_asset::<ArrayMaterial>();
 
-        load_internal_asset!(app, PREPASS_SHADER_HANDLE, "./custom_shader_system/custom_prepass.wgsl", Shader::from_wgsl);
-        load_internal_asset!(app, MESH_SHADER_HANDLE, "./custom_shader_system/custom_mesh.wgsl", Shader::from_wgsl);
-        load_internal_asset!(app, PBR_PREPASS_SHADER_HANDLE, "./custom_shader_system/custom_pbr_prepass.wgsl", Shader::from_wgsl);
-        load_internal_asset!(app, PBR_BINDINGS_SHADER_HANDLE, "./custom_shader_system/custom_pbr_bindings.wgsl", Shader::from_wgsl);
-        load_internal_asset!(app, MESH_VERTEX_OUTPUT, "./custom_shader_system/custom_vertex_output.wgsl", Shader::from_wgsl);
-        load_internal_asset!(app, PBR_SHADER_HANDLE, "./custom_shader_system/custom_pbr_fragment.wgsl", Shader::from_wgsl);
+        load_internal_asset!(app, PREPASS_SHADER_HANDLE, "./array_material/custom_prepass.wgsl", Shader::from_wgsl);
+        load_internal_asset!(app, MESH_SHADER_HANDLE, "./array_material/custom_mesh.wgsl", Shader::from_wgsl);
+        load_internal_asset!(app, PBR_PREPASS_SHADER_HANDLE, "./array_material/custom_pbr_prepass.wgsl", Shader::from_wgsl);
+        load_internal_asset!(app, PBR_BINDINGS_SHADER_HANDLE, "./array_material/custom_pbr_bindings.wgsl", Shader::from_wgsl);
+        load_internal_asset!(app, MESH_VERTEX_OUTPUT, "./array_material/custom_vertex_output.wgsl", Shader::from_wgsl);
+        load_internal_asset!(app, PBR_SHADER_HANDLE, "./array_material/custom_pbr_fragment.wgsl", Shader::from_wgsl);
     }
 }
