@@ -17,6 +17,7 @@ impl Plugin for ArrayMaterialSystemPlugin {
         app.add_plugins(MaterialPlugin::<ArrayMaterial>::default());
         app.add_asset::<ArrayMaterial>();
 
+
         load_internal_asset!(app, PREPASS_SHADER_HANDLE, "./array_material/custom_prepass.wgsl", Shader::from_wgsl);
         load_internal_asset!(app, MESH_SHADER_HANDLE, "./array_material/custom_mesh.wgsl", Shader::from_wgsl);
         load_internal_asset!(app, PBR_PREPASS_SHADER_HANDLE, "./array_material/custom_pbr_prepass.wgsl", Shader::from_wgsl);
